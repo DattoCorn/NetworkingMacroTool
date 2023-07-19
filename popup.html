@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snippet Extension</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="firebase/firebase-app.js"></script>
+  <script src="firebase/firebase-auth.js"></script>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Snippet Extension</h1>
+
+    <div id="loginContainer" class="auth-container">
+      <h2>Login</h2>
+      <input type="email" id="emailInput" placeholder="Email">
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button id="loginBtn">Log In</button>
+    </div>
+
+    <div id="signupContainer" class="auth-container">
+      <h2>Sign Up</h2>
+      <input type="email" id="signupEmailInput" placeholder="Email">
+      <input type="password" id="signupPasswordInput" placeholder="Password">
+      <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <div id="loggedInContainer" class="auth-container">
+      <h2>Logged In</h2>
+      <p id="userEmail"></p>
+      <button id="logoutBtn">Log Out</button>
+    </div>
+
+    <!-- Rest of the GUI elements for commands and folders -->
+
+  </div>
+</body>
+</html>

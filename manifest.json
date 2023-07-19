@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Datto Networking Macro Tool",
+    "version": "1.0",
+    "permissions": [
+      "clipboardWrite",
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "Assets/system-outline-16.gif",
+        "48": "Assets/system-outline-48.gif",
+        "128": "Assets/system-outline-128.gif"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
